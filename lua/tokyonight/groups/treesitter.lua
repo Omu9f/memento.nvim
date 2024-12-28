@@ -107,15 +107,16 @@ function M.get(c, opts)
     ["@punctuation.delimiter"]      = { fg = c.blue5 }, -- For delimiters ie: `.`
     ["@punctuation.special"]        = { fg = c.blue5 }, -- For special symbols (e.g. `{}` in string interpolation)
     ["@punctuation.special.markdown"] = { fg = c.orange }, -- For special symbols (e.g. `{}` in string interpolation)
-    ["@string"]                     = "String",
-    ["@string.documentation"]       = { fg = c.yellow },
-    ["@string.escape"]              = { fg = c.magenta }, -- For escape characters within a string.
-    ["@string.regexp"]              = { fg = c.blue6 }, -- For regexes.
     -- new stuff
-    -- ["@string"]                     = { fg = "#6dd7ff" }, -- Set color for strings
-    -- ["@string.documentation"]       = { fg = "#6dd7ff" }, -- Set color for docstrings
-    -- ["@string.escape"]              = { fg = "#6dd7ff" }, -- Set color for escape sequences
-    -- ["@string.regexp"]              = { fg = "#6dd7ff" }, -- Set color for regex strings
+    -- ["@string"]                     = "String",
+    -- ["@string.documentation"]       = { fg = c.yellow },
+    -- ["@string.escape"]              = { fg = c.magenta }, -- For escape characters within a string.
+    -- ["@string.regexp"]              = { fg = c.blue6 }, -- For regexes.
+    -- new stuff
+    ["@string"]                     = { fg = "#ff6a51" }, -- Set color for strings
+    ["@string.documentation"]       = { fg = "#ff6a51" }, -- Set color for docstrings
+    ["@string.escape"]              = { fg = "#ffffff" }, -- For escape characters within a string.
+    ["@string.regexp"]              = { fg = c.blue6 }, -- For regexes.
     -- new stuff
     ["@tag"]                        = "Label",
     ["@tag.attribute"]              = "@property",
