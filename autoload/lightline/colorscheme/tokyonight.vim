@@ -1,2 +1,2 @@
-let s:palette = v:lua.require('lightline.colorscheme.tokyonight')
-let g:lightline#colorscheme#tokyonight#palette = lightline#colorscheme#fill(s:palette)
+let s:palette = v:lua.require('lightline.colorscheme.memento')
+let g:lightline#colorscheme#memento#palette = lightline#colorscheme#fill(s:palette)
