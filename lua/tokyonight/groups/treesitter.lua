@@ -35,9 +35,10 @@ function M.get(c, opts)
     -- ["@function.method"]            = "Function",
     -- ["@function.method.call"]       = "@function.method",
     -- new stuff
-    ["@function"]                   = { fg = "#ea6398" },
-    ["@function.builtin"]           = { fg = c.purple, style = opts.styles.keywords },
-    ["@function.call"]              = { fg = c.purple, style = opts.styles.keywords },
+    ["@function"]                   = { fg = c.purple, style = opts.styles.keywords },
+    ["@function.builtin"]           = "Special",
+    ["@function.call"]              = "@function",
+    ["@function.macro"]             = "Macro",
     -- ["@function.method"]            = { fg = "#ea6398" },
     -- ["@function.method.call"]       = { fg = "#ea6398" },
     ["@function.method"]            = { fg = c.purple, style = opts.styles.keywords },
@@ -53,7 +54,8 @@ function M.get(c, opts)
     ["@keyword.directive.define"]   = "Define",
     ["@keyword.exception"]          = "Exception",
     -- ["@keyword.function"]           = { fg = c.magenta, style = opts.styles.functions }, -- For keywords used to define a function.
-    ["@keyword.import"]             = "Include",
+    -- ["@keyword.import"]             = "Include",
+    ["@keyword.import"]             = "@keyword",
     ["@keyword.operator"]           = "@operator",
     -- ["@keyword.repeat"]             = "Repeat",
     ["@keyword.repeat"]             = "@keyword",
@@ -102,7 +104,8 @@ function M.get(c, opts)
     ["@number"]                     = "Number",
     ["@number.float"]               = "Float",
     ["@operator"]                   = { fg = c.blue5 }, -- For any operator: `+`, but also `->` and `*` in C.
-    ["@property"]                   = { fg = c.green1 },
+    -- ["@property"]                   = { fg = c.green1 },
+    ["@property"]                   = { fg = c.fg },
     ["@punctuation.bracket"]        = { fg = c.fg_dark }, -- For brackets and parens.
     ["@punctuation.delimiter"]      = { fg = c.blue5 }, -- For delimiters ie: `.`
     ["@punctuation.special"]        = { fg = c.blue5 }, -- For special symbols (e.g. `{}` in string interpolation)
@@ -114,7 +117,7 @@ function M.get(c, opts)
     -- ["@string.regexp"]              = { fg = c.blue6 }, -- For regexes.
     -- new stuff
     ["@string"]                     = { fg = "#ff6a51" }, -- Set color for strings
-    ["@string.documentation"]       = { fg = "#ff6a51" }, -- Set color for docstrings
+    ["@string.documentation"]       = { fg = c.yellow }, -- Set color for docstrings
     ["@string.escape"]              = { fg = "#ffffff" }, -- For escape characters within a string.
     ["@string.regexp"]              = { fg = c.blue6 }, -- For regexes.
     -- new stuff
@@ -122,8 +125,10 @@ function M.get(c, opts)
     ["@tag.attribute"]              = "@property",
     ["@tag.delimiter"]              = "Delimiter",
     ["@tag.delimiter.tsx"]          = { fg = Util.blend_bg(c.blue, 0.7) },
-    ["@tag.tsx"]                    = { fg = c.red },
-    ["@tag.javascript"]             = { fg = c.red },
+    -- ["@tag.tsx"]                    = { fg = c.red },
+    -- ["@tag.javascript"]             = { fg = c.red },
+    ["@tag.tsx"]                    = { fg = c.blue2 },
+    ["@tag.javascript"]             = { fg = c.blue2 },
     ["@type"]                       = "Type",
     ["@type.builtin"]               = { fg = Util.blend_bg(c.blue1, 0.8) },
     ["@type.definition"]            = "Typedef",
