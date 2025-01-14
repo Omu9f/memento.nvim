@@ -117,9 +117,9 @@ function M.get(c, opts)
     -- ["@string.regexp"]              = { fg = c.blue6 }, -- For regexes.
     -- new stuff
     -- ["@string"]                     = { fg = "#ff8f4f" }, -- Set color for strings
-    ["@string"]                     = { fg = c.yellow }, -- Set color for strings
+    ["@string"]                     = { fg = c.blue }, -- Set color for strings
     ["@string.documentation"]       = { fg = c.yellow }, -- Set color for docstrings
-    ["@string.escape"]              = { fg = "#ffffff" }, -- For escape characters within a string.
+    ["@string.escape"]              = { fg = "#cccccc" }, -- For escape characters within a string.
     ["@string.regexp"]              = { fg = c.blue6 }, -- For regexes.
     -- new stuff
     ["@tag"]                        = "Label",
